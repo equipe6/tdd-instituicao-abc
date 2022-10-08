@@ -172,5 +172,13 @@ class PessoaServiceTest {
         assertNotNull(result);
     }
 
+    @Test
+    void testCount() throws Exception {
+        given(this.pessoaRepository.count()).willReturn(10L);
+
+        var result = this.pessoaService.count();
+        assertNotNull(result);
+        assertEquals(10L, result);
+    }
 
 }

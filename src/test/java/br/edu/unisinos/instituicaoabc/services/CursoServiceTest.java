@@ -123,4 +123,13 @@ class CursoServiceTest {
         assertNotNull(result);
     }
 
+    @Test
+    void testCount() throws Exception {
+        given(this.cursoRepository.count()).willReturn(10L);
+
+        var result = this.cursoService.count();
+        assertNotNull(result);
+        assertEquals(10L, result);
+    }
+
 }
