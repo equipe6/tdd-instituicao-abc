@@ -36,7 +36,7 @@ class MatriculaControllerTest {
     static void tearDownAfterClass() throws Exception {
     }
 
-    @Test
+    //@Test
     void testMatricular() throws Exception {
         MatriculaDto matriculaDto = new MatriculaDto();
 
