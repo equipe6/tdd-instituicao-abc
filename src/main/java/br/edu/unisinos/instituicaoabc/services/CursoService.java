@@ -57,7 +57,7 @@ public class CursoService implements Serializable {
         return this.cursoRepository.findByNomeLikeIgnoreCase(nome);
     }
 
-    public List<Curso> findByNome(TipoCursoEnum tipo) {
+    public List<Curso> findByTipo(TipoCursoEnum tipo) {
         return this.cursoRepository.findByTipo(tipo);
     }
 
